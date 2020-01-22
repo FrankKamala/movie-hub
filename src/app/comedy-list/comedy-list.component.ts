@@ -13,13 +13,13 @@ export class ComedyListComponent implements OnInit {
   ngOnInit() {
     interface ApiResponse {
       title: string;
-      releaseyear: string;
-      writter: string;
+      releaseYear: number;
+      writer: string;
       duration:number;
       summary:string;
       review:string
      }
-      //this.http.get<ApiResponse>('url Here').subscribe(data => this.comedys = data);
+      this.http.get<ApiResponse>('https://adwera-movie-api.herokuapp.com/category/1/movies').subscribe(data => this.comedys = data);
   }
 
 }

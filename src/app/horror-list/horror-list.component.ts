@@ -13,13 +13,13 @@ horrors:Horror; //Uncomment Me
   ngOnInit() {
     interface ApiResponse {
        title: string;
-       releaseyear: string;
-       writter: string;
+       releaseYear: number;
+       writer: string;
        duration:number;
        summary:string;
        review:string;
      }
-     //this.http.get<ApiResponse>('url Here').subscribe(data => this.horrors = data);
+     this.http.get<ApiResponse>('https://adwera-movie-api.herokuapp.com/category/2/movies').subscribe(data => this.horrors = data);
 
   }
 
