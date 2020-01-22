@@ -16,6 +16,7 @@ comedys:Comedy;
       writter: string;
       duration:number;
       summary:string;
+      review:string;
      }
       //this.http.get<ApiResponse>('url Here').subscribe(data => this.comedys = data);
   }

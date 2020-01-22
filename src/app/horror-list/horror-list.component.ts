@@ -16,9 +16,10 @@ horrors:Horror;
        writter: string;
        duration:number;
        summary:string;
+       review:string;
      }
      //this.http.get<ApiResponse>('url Here').subscribe(data => this.horrors = data);
-     //public writter:string, public duration:number; public summary: string
+  
   }
 
 }
