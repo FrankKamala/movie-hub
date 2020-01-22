@@ -11,11 +11,14 @@ horrors:Horror;
 
   ngOnInit() {
     interface ApiResponse {
-       name: string;
-       author: string;
-       description: string;
+       title: string;
+       releaseyear: string;
+       writter: string;
+       duration:number;
+       summary:string;
      }
      //this.http.get<ApiResponse>('url Here').subscribe(data => this.horrors = data);
+     //public writter:string, public duration:number; public summary: string
   }
 
 }
