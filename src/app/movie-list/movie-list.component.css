@@ -83,14 +83,14 @@
 }
  .movie_card .info_section .movie_social ul li {
 	 display: inline-block;
-	 color: rgba(255, 255, 255, 0.4);
+	 color: rgba(44, 130, 201, 1);
 	 transition: color 0.3s;
 	 transition-delay: 0.15s;
 	 margin: 0 10px;
 }
  .movie_card .info_section .movie_social ul li:hover {
 	 transition: color 0.3s;
-	 color: rgba(255, 255, 255, 0.8);
+	 color: rgba(0, 230, 64, 1);
 }
  .movie_card .info_section .movie_social ul li i {
 	 font-size: 19px;
