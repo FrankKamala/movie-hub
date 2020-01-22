@@ -1,4 +1,4 @@
 export class Horror {
-  constructor( public name: string, public author:string, public description: string){
+  constructor( public title: string, public releaseyear:number, public writter:string,public duration:number; public summary: string){
            }
 }
