@@ -6,10 +6,16 @@ import {HttpClient} from '@angular/common/http';//import http
   styleUrls: ['./horror-list.component.css']
 })
 export class HorrorListComponent implements OnInit {
-
+horrors:Horror;
   constructor(private http:HttpClient) { }
 
   ngOnInit() {
+    interface ApiResponse {
+       name: string;
+       author: string;
+       description: string;
+     }
+     //this.http.get<ApiResponse>('url Here').subscribe(data => this.horrors = data);
   }
 
 }
