@@ -7,7 +7,7 @@ import {HttpClient} from '@angular/common/http';//import http
 })
 export class HorrorListComponent implements OnInit {
 
-  constructor() { }
+  constructor(private http:HttpClient) { }
 
   ngOnInit() {
   }
