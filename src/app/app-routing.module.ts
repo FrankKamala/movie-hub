@@ -9,6 +9,7 @@ const routes: Routes = [
   { path: 'movieList', component: MovieListComponent},
   { path: 'horrorList', component: HorrorListComponent},
   { path: 'comedyList', component: ComedyListComponent},
+  { path: '', redirectTo:"/movieList", pathMatch:"full"},
 ];
 
 @NgModule({
