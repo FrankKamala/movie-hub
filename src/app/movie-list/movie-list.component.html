@@ -1,16 +1,16 @@
-
+<div *ngFor='let movie of movies'>
     <div class="movie_card" id="bright">
       <div class="info_section">
         <div class="movie_header">
           <img class="locandina" src="../../assets/images/poster/post1.jpg"/>
-          <h1>The Kamala's</h1>
-          <h4>2020, David Ayer</h4>
-          <span class="minutes">117 min</span>
+          <h1>{{movie.title}}</h1>
+          <h4>{{movie.releaseYear}}, {{movie.writer}}</h4>
+          <span class="minutes">{{movie.duration}}min</span>
           <p class="type">Action, Crime, Fantasy</p>
         </div>
         <div class="movie_desc">
           <p class="text">
-            Set in a world where fantasy creatures live side by side with humans. A human cop is forced to work with an Orc to find a weapon everyone is prepared to kill for.
+              {{movie.summary}}
           </p>
         </div>
         <div class="movie_social">
@@ -23,3 +23,5 @@
       </div>
       <div class="blur_back bright_back"></div>
     </div>
+  </div>
+  
