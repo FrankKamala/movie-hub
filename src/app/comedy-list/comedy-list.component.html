@@ -1,28 +1,28 @@
 <div *ngFor='let comedy of comedys'>
-    <div class="movie_card" id="ave">
-        <div class="info_section">
-          <div class="movie_header">
-            <img class="locandina" src="https://mr.comingsoon.it/imgdb/locandine/235x336/53715.jpg"/>
-          <h1>{{comedy.title}}</h1>  <!-- INTER name -->
-            <h4>{{comedy.releaseYear}}, {{comedy.writer}}</h4>
-            <span class="minutes">{{comedy.duration}}min</span>
-            <p class="type">Action, Adventure, Sci-Fi</p>
-          </div>
-          <div class="movie_desc">
-            <p class="text">
-                {{comedy.summary}}
-            </p><!-- INTERPOLATE Description -->
-          </div>
-          <div class="movie_social">
-            <ul>
-              <li><i class="material-icons">share</i></li>
-              <li><i class="material-icons"></i></li>
-              <li><i class="material-icons">chat_bubble</i></li>
-            </ul>
-          </div>
+  <div class="movie_card" id="ave">
+      <div class="info_section">
+        <div class="movie_header">
+          <img class="locandina" src="https://mr.comingsoon.it/imgdb/locandine/235x336/53715.jpg"/>
+        <h1>{{comedy.title}}</h1>  <!-- INTER name -->
+          <h4>{{comedy.releaseYear}}, {{comedy.writer}}</h4>
+          <span class="minutes">{{comedy.duration}} min</span>
+          <p class="type">Action, Adventure, Sci-Fi</p>
         </div>
-        <div class="blur_back ave_back"></div>
+        <div class="movie_desc">
+          <p class="text">
+              {{comedy.summary}}
+          </p><!-- INTERPOLATE Description -->
+        </div>
+        <div class="movie_social">
+          <ul>
+            <li><i class="material-icons">share</i></li>
+            <li><i class="material-icons"></i></li>
+            <li><i class="material-icons">chat_bubble</i></li>
+          </ul>
+        </div>
       </div>
+      <div class="blur_back ave_back"></div>
+    </div>
 
 </div>
-   
+ 

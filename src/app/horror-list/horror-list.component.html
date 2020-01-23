@@ -1,26 +1,26 @@
 <div  *ngFor='let horror of horrors'>
-<div class="movie_card" id="tomb">
-  <div class="info_section">
-    <div class="movie_header">
-      <img class="locandina" src="../../assets/images/poster/post2.jpg"/>
-       <h1>{{horror.title}}</h1>
-      <h4>{{horror.releaseYear}}, {{horror.writer}}</h4>
-      <span class="minutes">{{horror.duration}}</span>
-      <p class="type">Action, Fantasy</p>
+  <div class="movie_card" id="tomb">
+    <div class="info_section">
+      <div class="movie_header">
+        <img class="locandina" src="../../assets/images/poster/post2.jpg"/>
+         <h1>{{horror.title}}</h1>
+        <h4>{{horror.releaseYear}}, {{horror.writer}}</h4>
+        <span class="minutes">{{horror.duration}} min</span>
+        <p class="type">Action, Fantasy</p>
+      </div>
+      <div class="movie_desc">
+        <p class="text">
+          {{horror.summary}}
+        </p>
+      </div>
+      <div class="movie_social">
+        <ul>
+          <li><i class="material-icons">share</i></li>
+          <li><i class="material-icons"></i></li>
+          <li><i class="material-icons">chat_bubble</i></li>
+        </ul>
+      </div>
     </div>
-    <div class="movie_desc">
-      <p class="text">
-        {{horror.summary}}
-      </p>
-    </div>
-    <div class="movie_social">
-      <ul>
-        <li><i class="material-icons">share</i></li>
-        <li><i class="material-icons"></i></li>
-        <li><i class="material-icons">chat_bubble</i></li>
-      </ul>
-    </div>
+    <div class="blur_back tomb_back"></div>
   </div>
-  <div class="blur_back tomb_back"></div>
-</div>
-</div>
+  </div>
