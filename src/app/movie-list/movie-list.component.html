@@ -1,27 +1,26 @@
 <div *ngFor='let movie of movies'>
-    <div class="movie_card" id="bright">
-      <div class="info_section">
-        <div class="movie_header">
-          <img class="locandina" src="../../assets/images/poster/post1.jpg"/>
-          <h1>{{movie.title}}</h1>
-          <h4>{{movie.releaseYear}}, {{movie.writer}}</h4>
-          <span class="minutes">{{movie.duration}}min</span>
-          <p class="type">Action, Crime, Fantasy</p>
-        </div>
-        <div class="movie_desc">
-          <p class="text">
-              {{movie.summary}}
-          </p>
-        </div>
-        <div class="movie_social">
-          <ul>
-            <li><i class="material-icons">share</i></li>
-            <li><i class="material-icons"></i></li>
-            <li><i class="material-icons">chat_bubble</i></li>
-          </ul>
-        </div>
+  <div class="movie_card" id="bright">
+    <div class="info_section">
+      <div class="movie_header">
+        <img class="locandina" src="../../assets/images/poster/post1.jpg"/>
+        <h1>{{movie.title}}</h1>
+        <h4>{{movie.releaseYear}}, {{movie.writer}}</h4>
+        <span class="minutes">{{movie.duration}} min</span>
+        <p class="type">Action, Crime, Fantasy</p>
       </div>
-      <div class="blur_back bright_back"></div>
+      <div class="movie_desc">
+        <p class="text">
+            {{movie.summary}}
+        </p>
+      </div>
+      <div class="movie_social">
+        <ul>
+          <li><i class="material-icons">share</i></li>
+          <li><i class="material-icons"></i></li>
+          <li><i class="material-icons">chat_bubble</i></li>
+        </ul>
+      </div>
     </div>
+    <div class="blur_back bright_back"></div>
   </div>
-  
+</div>
